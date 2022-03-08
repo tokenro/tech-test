@@ -17,7 +17,7 @@ Caching of items will be done through RabbitMQ. Instead of directly writing to R
 
 You must build a local environment using docker & docker-compose that can be started with the command: “make dev”. This should start the environment and have it 100% ready and operational, without any manual action needed. 
 
-Build 2 different layers of testing. Use phpspec for unit tests & behat for integration tests. It’ll be important to have high test coverage. 
+Build 2 different layers of testing, unit and integration. It’ll be important to have high test coverage. 
 
 ## Example 
 
@@ -36,7 +36,6 @@ curl -s http://awesomequotesapi.com/shout/steve-jobs?limit=2
 
 ## Constraints 
 - Count N provided MUST be equal or less than 10. If not, our API should return an error.
-- Any framework is allowed but Laravel
 
 ## What will we evaluate?
 * **Design**: We know this is a very simple application but we want to see how you design code. We value having a clear application architecture, that helps maintain it (and make changes requested by the product owner) for years.
